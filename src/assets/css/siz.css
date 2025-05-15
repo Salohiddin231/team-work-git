@@ -1,4 +1,4 @@
-.siz_title {
+.siz_glavni_title {
     font-family: Poppins;
     font-size: 40px;
     font-weight: 700;
@@ -17,7 +17,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    width: 385px;
+    width: 360px;
     /* height: 290px; */
     padding: 23px;
     border-radius: 12px;
@@ -46,4 +46,44 @@
     font-size: 18px;
     font-weight: 500;
     width: 327px;
+}
+
+.flex {
+    padding-top: 42px;
+    padding-bottom: 48px;
+}
+
+.flex_wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.elma {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    box-shadow: px 4px 20px 0px rgba(0, 0, 0, 0.1);
+    background: url(../icons/elma.svg) center;
+    border: none;
+    object-fit: cover;
+}
+
+.wb {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    box-shadow: px 4px 20px 0px rgba(0, 0, 0, 0.1);
+    background: url(../icons/wb.svg) center;
+    border: none;
+    object-fit: cover;
+}
+
+.active_icon {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    box-shadow: px 4px 20px 0px rgba(0, 0, 0, 0.1);
+    background: url(../icons/active.svg) center;
+    border: none;
+    object-fit: cover;
 }
