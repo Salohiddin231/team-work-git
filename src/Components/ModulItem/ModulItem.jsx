@@ -8,7 +8,7 @@ export default function ModulItem({ num, num2, text, title,subtitle }) {
                     <div className="num">{num}</div>
                     <span className="modul_tochki">...</span>
                 </div>
-                <p className="modul_title">{num2}, {title}</p>
+                <p className="modul_card_title">{num2}, {title}</p>
                 <p className="modul_subtitle">{subtitle}</p>
                 <p className="modul_text">{text}</p>
             </li>
