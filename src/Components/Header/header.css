@@ -1,9 +1,8 @@
-
 .header_wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
-padding: 37px 0;
+    padding: 37px 0;
 }
 
 .header_logo_title {
