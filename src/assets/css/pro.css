@@ -1,0 +1,55 @@
+.pro_title {
+    font-family: Poppins;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.pro_subtitle {
+    width: 1049px;
+    font-family: Poppins;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.pro_card_wrapper {
+    padding-top: 38px;
+    padding-bottom: 72px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    flex-direction: column;
+    gap: 25px;
+}
+
+.pro_card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 385px;
+    /* height: 290px; */
+    padding: 23px;
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0px 4px 20px 0px;
+    background: rgb(255, 255, 255);
+}
+
+.pro_img_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.pro_tochki {
+    font-weight: 900;
+    color: rgb(32, 177, 90);
+    font-size: 50px;
+}
+
+.pro_card_subtitle {
+    width: 345px;
+    font-family: Poppins;
+    font-size: 22px;
+    font-weight: 500;
+}
