@@ -1,10 +1,10 @@
 
-export function SizItem({num, title, span, text}) {
+export function SizItem({ num, title, span, text, nom }) {
     return (
         <>
             <li className="siz_card">
                 <div className="siz_img_wrapper">
-                    <div className="num">{num}</div>
+                    <div className={nom}>{num}</div>
                 </div>
                 <p className="siz_title">{title}</p>
                 <p className="siz_span"><span>{span}</span></p>
