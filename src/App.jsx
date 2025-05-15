@@ -2,6 +2,7 @@ import './App.css';
 import './assets/css/pro.css';
 import './assets/css/siz.css';
 import './assets/css/kurs.css'
+import './assets/css/modul.css'
 import { Footer, Header, KursItem, SizItem } from './Components';
 import { ProItem } from './Components';
 import bg from './assets/images/kurs_bg.png'
@@ -101,10 +102,10 @@ function App() {
                   <img className='kurs_img' src={bg} alt="bg" />
                 </div>
                 <div className="kurs_right">
-                  <KursItem img={galery} text_2='1.' span=' 25' text=' + Videodarslar' subtitle='7 ta modul, 25 dan oshiq 7-10 daqiqalik aniq, qisqa, lekin chuqur tushuntirilgan videodarsliklar.'/>
-                  <KursItem img={reiting} text_2='2.' span='Kurator' text=' nazorati' subtitle='Har bir darsdan keyin amaliy vazifalar beriladi va buni bajarishda Kurator sizga yordam berib boradi.'/>
-                  <KursItem img={kalam} text_2='3.' span='Zoom' text=' Darslar' subtitle='(1-ta boshlanishida, 1-ta savdo moduli oxirida, 1-ta yakuniy natija bo‘yicha).'/>
-                  <KursItem img={gift} text_2='4.' span='Bonus ' text='materiallar' subtitle='Video syomkasi va montaj qilish uchun juda ko’p foydali materiallar. Shablonlar va Chek listlar.'/>
+                  <KursItem img={galery} text_2='1.' span=' 25' text=' + Videodarslar' subtitle='7 ta modul, 25 dan oshiq 7-10 daqiqalik aniq, qisqa, lekin chuqur tushuntirilgan videodarsliklar.' />
+                  <KursItem img={reiting} text_2='2.' span='Kurator' text=' nazorati' subtitle='Har bir darsdan keyin amaliy vazifalar beriladi va buni bajarishda Kurator sizga yordam berib boradi.' />
+                  <KursItem img={kalam} text_2='3.' span='Zoom' text=' Darslar' subtitle='(1-ta boshlanishida, 1-ta savdo moduli oxirida, 1-ta yakuniy natija bo‘yicha).' />
+                  <KursItem img={gift} text_2='4.' span='Bonus ' text='materiallar' subtitle='Video syomkasi va montaj qilish uchun juda ko’p foydali materiallar. Shablonlar va Chek listlar.' />
                 </div>
               </div>
             </div>
@@ -112,6 +113,15 @@ function App() {
         </section>
         {/* kurs end */}
 
+        {/* modul start */}
+        <section className="modul">
+          <div className="container">
+            <div className="modul_wrapper">
+              <h5 className="modul_title"><span>Kurs</span> modullari</h5>
+            </div>
+          </div>
+        </section>
+        {/* modul end */}
 
       </main>
 
