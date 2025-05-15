@@ -2,6 +2,7 @@ import './App.css';
 import './assets/css/pro.css';
 import './assets/css/siz.css';
 import './assets/css/kurs.css'
+import './assets/css/modul.css'
 import { Footer, Header, KursItem, SizItem } from './Components';
 import { ProItem } from './Components';
 import bg from './assets/images/kurs_bg.png'
@@ -9,6 +10,7 @@ import galery from './assets/icons/gurnal.svg'
 import kalam from './assets/icons/kalam.svg'
 import reiting from './assets/icons/reiting.svg'
 import gift from './assets/icons/gift.svg'
+import ModulItem from './Components/ModulItem/ModulItem';
 
 function App() {
   return (
@@ -101,10 +103,10 @@ function App() {
                   <img className='kurs_img' src={bg} alt="bg" />
                 </div>
                 <div className="kurs_right">
-                  <KursItem img={galery} text_2='1.' span=' 25' text=' + Videodarslar' subtitle='7 ta modul, 25 dan oshiq 7-10 daqiqalik aniq, qisqa, lekin chuqur tushuntirilgan videodarsliklar.'/>
-                  <KursItem img={reiting} text_2='2.' span='Kurator' text=' nazorati' subtitle='Har bir darsdan keyin amaliy vazifalar beriladi va buni bajarishda Kurator sizga yordam berib boradi.'/>
-                  <KursItem img={kalam} text_2='3.' span='Zoom' text=' Darslar' subtitle='(1-ta boshlanishida, 1-ta savdo moduli oxirida, 1-ta yakuniy natija bo‘yicha).'/>
-                  <KursItem img={gift} text_2='4.' span='Bonus ' text='materiallar' subtitle='Video syomkasi va montaj qilish uchun juda ko’p foydali materiallar. Shablonlar va Chek listlar.'/>
+                  <KursItem img={galery} text_2='1.' span=' 25' text=' + Videodarslar' subtitle='7 ta modul, 25 dan oshiq 7-10 daqiqalik aniq, qisqa, lekin chuqur tushuntirilgan videodarsliklar.' />
+                  <KursItem img={reiting} text_2='2.' span='Kurator' text=' nazorati' subtitle='Har bir darsdan keyin amaliy vazifalar beriladi va buni bajarishda Kurator sizga yordam berib boradi.' />
+                  <KursItem img={kalam} text_2='3.' span='Zoom' text=' Darslar' subtitle='(1-ta boshlanishida, 1-ta savdo moduli oxirida, 1-ta yakuniy natija bo‘yicha).' />
+                  <KursItem img={gift} text_2='4.' span='Bonus ' text='materiallar' subtitle='Video syomkasi va montaj qilish uchun juda ko’p foydali materiallar. Shablonlar va Chek listlar.' />
                 </div>
               </div>
             </div>
@@ -112,6 +114,25 @@ function App() {
         </section>
         {/* kurs end */}
 
+        {/* modul start */}
+        <section className="modul">
+          <div className="container">
+            <div className="modul_wrapper">
+
+              <h5 className="modul_title"><span>Kurs</span> modullari</h5>
+              <ul className='modul_card_wrapper'>
+                <ModulItem num='1' num2='1' title='Modul' subtitle='Instagram orqali pul ishlashning formulasi!' text='O‘z mijozingni topish uchun “Tez Avatar Metodi” Ishonchli va kerakli mijozlarni jalb qilish' />
+                <ModulItem num='2' num2='2' title='Modul' subtitle='Bir kunda auditoriya aniqlash!' text='4 kunlik kontent yo‘li: Qanday qilib 1 haftada mijoz chiqara oladi? Reels + Story + 1 ta post = Mikrovoronka' />
+                <ModulItem num='3' num2='3' title='Modul' subtitle='Tez natija beradigan kontent rejasi!' text='3 ta ishonch uyg‘otuvchi ssenariy.' />
+                <ModulItem num='4' num2='4' title='Modul' subtitle='Kamera oldida o‘zingni sot!' text='O‘zingni ekspert sifatida ko‘rsatish: tana, ovoz, ko‘z aloqa.' />
+                <ModulItem num='5' num2='5' title='Modul' subtitle='Instagram’dagi pulli postlar sirasi!' text='Reels bilan trafik olish, CTA bilan ishlash: nima deyish kerak? “Sotuvchi post” formulasini yozish' />
+                <ModulItem num='6' num2='6' title='Modul' subtitle='Profilni million dollarlik qadoqlash!' text='Profil bio, vizual ko‘rinish, Highlights — 1 kunda tartibga keltirish. Profilingda “ishonch signal”lari!' />
+                <ModulItem num='7' num2='7' title='Modul' subtitle='Savdoga chiqarish strategiyasi!' text={`Mini launch: 5 kunlik kontent orqali kurs yoki mahsulot sotish. Savdodan oldingi “issiq postlar” tayyorlash.`} />
+              </ul>
+            </div>
+          </div>
+        </section>
+        {/* modul end */}
 
       </main>
 

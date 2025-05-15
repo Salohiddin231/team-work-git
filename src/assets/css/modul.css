@@ -1,0 +1,49 @@
+.modul_title {
+    font-family: Poppins;
+    font-size: 40px;
+    font-weight: 700;
+}
+.modul_card_wrapper {
+    padding-top: 26px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    flex-direction: column;
+    gap: 48px;
+}
+.modul_card {
+    width: 380px;
+    height: 260px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
+    background: rgb(255, 255, 255);
+}
+.modul_img_wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.modul_tochki {
+    font-weight: 900;
+    color: rgb(32, 177, 90);
+    font-size: 50px;
+}
+
+.modul_card_title {
+    color: rgb(19, 34, 56);
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.modul_subtitle {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.modul_text {
+    padding-top: 10px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+}

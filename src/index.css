@@ -25,6 +25,10 @@ button {
     outline: none;
 }
 
+button * {
+    cursor: pointer;
+}
+
 span {
     color: rgb(32, 177, 90);
 }
