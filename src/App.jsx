@@ -1,8 +1,14 @@
 import './App.css';
 import './assets/css/pro.css';
 import './assets/css/siz.css';
-import { Footer, Header, SizItem } from './Components';
+import './assets/css/kurs.css'
+import { Footer, Header, KursItem, SizItem } from './Components';
 import { ProItem } from './Components';
+import bg from './assets/images/kurs_bg.png'
+import galery from './assets/icons/gurnal.svg'
+import kalam from './assets/icons/kalam.svg'
+import reiting from './assets/icons/reiting.svg'
+import gift from './assets/icons/gift.svg'
 
 function App() {
   return (
@@ -81,6 +87,32 @@ function App() {
           </div>
         </section>
         {/* siz end */}
+
+        {/* kurs start */}
+        <section className="kurs">
+          <div className="container">
+            <div className="kurs_wrapper">
+              <div className="kurs_text_wrapper">
+                <h4 className="kurs_title">MEDIA BOOST PRO</h4>
+                <p className="kurs_text"><span>Kurs</span> formati</p>
+              </div>
+              <div className="kurs_left_right">
+                <div className="kurs_left">
+                  <img className='kurs_img' src={bg} alt="bg" />
+                </div>
+                <div className="kurs_right">
+                  <KursItem img={galery} text_2='1.' span=' 25' text=' + Videodarslar' subtitle='7 ta modul, 25 dan oshiq 7-10 daqiqalik aniq, qisqa, lekin chuqur tushuntirilgan videodarsliklar.'/>
+                  <KursItem img={reiting} text_2='2.' span='Kurator' text=' nazorati' subtitle='Har bir darsdan keyin amaliy vazifalar beriladi va buni bajarishda Kurator sizga yordam berib boradi.'/>
+                  <KursItem img={kalam} text_2='3.' span='Zoom' text=' Darslar' subtitle='(1-ta boshlanishida, 1-ta savdo moduli oxirida, 1-ta yakuniy natija bo‘yicha).'/>
+                  <KursItem img={gift} text_2='4.' span='Bonus ' text='materiallar' subtitle='Video syomkasi va montaj qilish uchun juda ko’p foydali materiallar. Shablonlar va Chek listlar.'/>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* kurs end */}
+
+
       </main>
 
       <Footer />
