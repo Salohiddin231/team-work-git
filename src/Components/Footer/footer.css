@@ -1,0 +1,38 @@
+.footer_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+}
+
+.footer_text_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer_logo_title {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.footer_logo_title span {
+    color: rgb(32, 177, 90);
+}
+
+.footer_subtitle {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.footer_subtitle span {
+    color: rgb(32, 177, 90);
+}
+
+.footer_text {
+    color: rgb(10, 20, 47);
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+}
