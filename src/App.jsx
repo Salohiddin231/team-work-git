@@ -3,7 +3,12 @@ import './assets/css/pro.css';
 import './assets/css/siz.css';
 import './assets/css/kurs.css'
 import './assets/css/modul.css'
+import './assets/css/hero.css'
+import './assets/css/video.css'
+import './assets/css/position.css'
 import { Footer, Header, KursItem, SizItem } from './Components';
+import Vide from './assets/images/video.png'
+import Biznismen from './assets/images/biznismen.png'
 import { ProItem } from './Components';
 import bg from './assets/images/kurs_bg.png'
 import galery from './assets/icons/gurnal.svg'
@@ -11,13 +16,40 @@ import kalam from './assets/icons/kalam.svg'
 import reiting from './assets/icons/reiting.svg'
 import gift from './assets/icons/gift.svg'
 import ModulItem from './Components/ModulItem/ModulItem';
-
+import { Video } from './Components';
+import { Info } from './Components';
 function App() {
   return (
     <div className="App">
       <Header />
 
       <main>
+
+        <section className="hero">
+          <div className="container">
+            <div className="hero_wrapper">
+              <div className="hero_content">
+                <h2 className='hero_title'>1 Oylik Biznesni Media orqali rivojlantirish kursi</h2>
+                <p className='hero_suptitle'>Biznesini brend darajasiga olib chiqmoqchi va savdosini media orqali x10 baravarga oshirmoqchi bo’lgan Biznesmenlar, Kasb egalari va mutahasislar uchun mahsus kurs!</p>
+                <button className="hero_btn">Royhatdan otish!</button>
+              </div>
+              <img src={Biznismen} alt="" />
+            </div>
+          </div>
+          <div className="info_wrapper">
+            <div className="container">
+              <div className="info_content">
+                <Info num={'X 10'} text={'Savdoni 10 baravar oshirish uchun kerak bo’ladigan kuchli amaliy bilimlar!'} />
+                <Info num={'7 yil'} text={'Biznes tajribani va 4 yillik mediadagi bosib o’tilgan yo’lni, 1 oylik kursda o’rganasiz va biznesizda ishlatasiz!'} />
+                <Info num={'+ 100'} text={'Foydali materiallar, Amaliy vazifalar va Videodarsliklar!'} />
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* hero end*/}
+
+
+
         {/* pro start */}
         <section className="pro">
           <div className="container">
@@ -60,6 +92,24 @@ function App() {
         </section>
         {/* pro end */}
 
+        {/* video start */}
+        <section className="video">
+          <div className="container">
+            <h3 className="video_title">Sahib Ahmatov - O’zi <span>kim?</span> </h3>
+            <p className="video_suptitle">Tadbirkor - <span>Active Wildberries</span> va <span>Active Media</span> brendlari asoschisi!</p>
+            <div className="video_wrapper">
+              <Video foto={Vide} />
+              <Video foto={Vide} />
+              <Video foto={Vide} />
+              <Video foto={Vide} />
+            </div>
+          </div>
+        </section>
+        {/* video end */}
+
+
+
+        {/* flex start */}
         <div className="flex">
           <div className="container">
             <ul className="flex_wrapper">
@@ -69,6 +119,9 @@ function App() {
             </ul>
           </div>
         </div>
+        {/* flex end */}
+
+
         {/* siz start */}
         <section className="siz">
           <div className="container">
@@ -133,6 +186,29 @@ function App() {
           </div>
         </section>
         {/* modul end */}
+
+        {/* position start */}
+        <section className="position">
+          <div className="container">
+            <div className="contact_wrapper">
+              <div className="contact-container">
+                <div className="contact-text">
+                  <p className='contact_title'>Siz bilan bog‘lanishimiz uchun,<span>formani</span> to‘ldiring!</p>
+                  <p className="author"><span>Sakhib</span> Akhmatov</p>
+                </div>
+                <form className="contact-form">
+                  <input type="text" placeholder="Ismingiz*" required />
+                  <input type="tel" placeholder="Telefon raqamingiz*" required />
+                  <button type="submit">Ro‘yxatdan o‘ting!</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* position end */}
+
+
+
 
       </main>
 
