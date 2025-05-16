@@ -1,3 +1,7 @@
+.pro {
+    padding-top: 80px;
+}
+
 .pro_title {
     font-family: Poppins;
     font-size: 40px;
@@ -52,4 +56,42 @@
     font-family: Poppins;
     font-size: 22px;
     font-weight: 500;
+}
+
+@media(max-width:1280px) {
+    .container {
+        padding: 0 40px;
+    }
+
+    .pro_card_wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width:1130px) {
+    .pro_card_subtitle {
+        width: 100%;
+    }
+
+    .pro_subtitle {
+        width: 90%;
+        font-size: 17px;
+    }
+}
+
+@media(max-width:880px) {
+    .pro_card_wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pro_title {
+        font-size: 25px;
+    }
+    .pro_card {
+        width: 100%;
+    }
+
 }

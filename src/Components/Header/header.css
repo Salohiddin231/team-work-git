@@ -41,3 +41,32 @@
     font-size: 19px;
     font-weight: 400;
 }
+
+.burger_menu {
+    width: 30px;
+    height: 30px;
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    border: none;
+    outline: none;
+    gap: 4px;
+    background: transparent;
+}
+
+.burger_span {
+    border: 2.4px solid rgb(32, 177, 90);
+    border-radius: 2px;
+}
+
+@media(max-width:880px) {
+    .header_btn {
+        display: none;
+    }
+    .burger_menu {
+        display: flex;
+    }
+    .header_subtitle {
+        display: none;
+    }
+}

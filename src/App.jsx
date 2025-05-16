@@ -33,16 +33,16 @@ function App() {
                 <p className='hero_suptitle'>Biznesini brend darajasiga olib chiqmoqchi va savdosini media orqali x10 baravarga oshirmoqchi bo’lgan Biznesmenlar, Kasb egalari va mutahasislar uchun mahsus kurs!</p>
                 <button className="hero_btn">Royhatdan otish!</button>
               </div>
-              <img src={Biznismen} alt="" />
+              <img className='hero_img' src={Biznismen} alt="" />
             </div>
           </div>
           <div className="info_wrapper">
             <div className="container">
-              <div className="info_content">
+              <center className="info_content">
                 <Info num={'X 10'} text={'Savdoni 10 baravar oshirish uchun kerak bo’ladigan kuchli amaliy bilimlar!'} />
                 <Info num={'7 yil'} text={'Biznes tajribani va 4 yillik mediadagi bosib o’tilgan yo’lni, 1 oylik kursda o’rganasiz va biznesizda ishlatasiz!'} />
                 <Info num={'+ 100'} text={'Foydali materiallar, Amaliy vazifalar va Videodarsliklar!'} />
-              </div>
+              </center>
             </div>
           </div>
         </section>
@@ -61,31 +61,11 @@ function App() {
                 <span>Instagram’da</span> nafaqat post joylash, balki savdo qilishni o‘rganmoqchimisiz? Unda bu kurs aynan siz uchun!
               </p>
               <ul className="pro_card_wrapper">
-                <ProItem
-                  num="1"
-                  span="SMM mutaxassislari —"
-                  text="oddiy kontent emas, natija beradigan strategiyalar orqali mijozlarga haqiqiy qiymat yaratmoqchi bo‘lganlar uchun."
-                />
-                <ProItem
-                  num="2"
-                  span="SMM mutaxassislari —"
-                  text="oddiy kontent emas, natija beradigan strategiyalar orqali mijozlarga haqiqiy qiymat yaratmoqchi bo‘lganlar uchun."
-                />
-                <ProItem
-                  num="3"
-                  span="Yangi boshlayotganlar — "
-                  text="Instagram olamiga endi kirayotgan, qanday boshlashni bilmayotgan, lekin o‘rganib pul ishlamoqchi bo‘lganlar uchun."
-                />
-                <ProItem
-                  num="4"
-                  span="Shaxsiy brend yaratmoqchi bo‘lganlar —"
-                  text="o‘z ismi bilan tanilish, auditoriya yig‘ish va kuchli ishonch shakllantirishni xohlovchilar uchun."
-                />
-                <ProItem
-                  num="5"
-                  span="Bloger bo‘lmagan, mahsulotini internetda sotmoqchi bo‘lganlar — "
-                  text="yuzini ko‘rsatmasdan blog yuritish, va savdo qilishni o‘rganmoqchilar uchun."
-                />
+                <ProItem num="1" span="SMM mutaxassislari —" text="oddiy kontent emas, natija beradigan strategiyalar orqali mijozlarga haqiqiy qiymat yaratmoqchi bo‘lganlar uchun."/>
+                <ProItem num="2" span="SMM mutaxassislari —" text="oddiy kontent emas, natija beradigan strategiyalar orqali mijozlarga haqiqiy qiymat yaratmoqchi bo‘lganlar uchun."/>
+                <ProItem num="3" span="Yangi boshlayotganlar — " text="Instagram olamiga endi kirayotgan, qanday boshlashni bilmayotgan, lekin o‘rganib pul ishlamoqchi bo‘lganlar uchun."/>
+                <ProItem num="4" span="Shaxsiy brend yaratmoqchi bo‘lganlar —" text="o‘z ismi bilan tanilish, auditoriya yig‘ish va kuchli ishonch shakllantirishni xohlovchilar uchun."/>
+                <ProItem num="5" span="Bloger bo‘lmagan, mahsulotini internetda sotmoqchi bo‘lganlar — " text="yuzini ko‘rsatmasdan blog yuritish, va savdo qilishni o‘rganmoqchilar uchun."/>
               </ul>
             </div>
           </div>

@@ -19,6 +19,7 @@
 .kurs_img {
     width: 606px;
     height: 586px;
+    object-fit: cover;
 }
 
 .kurs_text {
@@ -33,7 +34,6 @@
     gap: 12px;
     padding: 32px;
     width: 312px;
-    height: 276px;
     border-radius: 12px;
     border: none;
     box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.07);
@@ -63,4 +63,49 @@
     font-family: Poppins;
     font-size: 16px;
     font-weight: 400;
+}
+
+
+@media(max-width:1280px) {
+
+    .kurs_left_right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media(max-width:880px) {
+
+    .kurs_title {
+        font-size: 25px;
+    }
+
+    .kurs_text {
+        font-size: 17px;
+    }
+}
+
+@media(max-width:700px) {
+
+    .kurs_card {
+        width: 100%;
+    }
+
+    .kurs_subtitle {
+        width: 100%;
+    }
+
+    .kurs_img {
+        width: 100%;
+        object-position: center;
+    }
+}
+
+@media(max-width:400px) {
+    .kurs_right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }

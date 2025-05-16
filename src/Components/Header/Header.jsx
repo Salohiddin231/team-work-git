@@ -12,6 +12,11 @@ export function Header() {
             <img src={tel} alt="" />
             0555 996 966
           </button>
+          <button className='burger_menu'>
+            <span className='burger_span'></span>
+            <span className='burger_span'></span>
+            <span className='burger_span'></span>
+          </button>
         </div>
       </div>
     </header>

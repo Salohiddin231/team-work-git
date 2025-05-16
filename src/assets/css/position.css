@@ -79,3 +79,28 @@
 .contact-form button:hover {
   background-color: #e6f5e9;
 }
+
+@media(max-width:880px) {
+  .contact-container {
+
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 15px;
+    top: 10px;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+
+  .author,
+  .contact_title {
+    font-size: 22px;
+    
+  }
+  .author {
+    padding-top: 16px;
+  }
+}
