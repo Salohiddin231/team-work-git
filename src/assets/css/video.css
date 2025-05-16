@@ -29,3 +29,19 @@
     line-height: 45px;
     letter-spacing: 0%;
 }
+
+@media(max-width:880px) {
+
+    .video_wrapper {
+        display: none;
+    }
+
+    .video_title {
+        font-size: 25px;
+    }
+
+    .video_suptitle {
+        font-size: 17px;
+    }
+
+}

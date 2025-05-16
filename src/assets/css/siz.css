@@ -56,6 +56,8 @@
 .flex_wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    flex-direction: column;
+    gap: 30px;
 }
 
 .elma {
@@ -86,4 +88,35 @@
     background: url(../icons/active.svg) center;
     border: none;
     object-fit: cover;
+}
+
+
+@media(max-width:1280px) {
+
+    .siz_card_wrapper,
+    .flex_wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width:880px) {
+
+    .flex_wrapper,
+    .siz_card_wrapper {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .siz_glavni_title {
+        font-size: 25px;
+    }
+
+    .siz_card {
+        width: 100%;
+    }
+    .siz_card_subtitle {
+        width: 100%;
+    }
 }
