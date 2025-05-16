@@ -17,6 +17,7 @@
 }
 
 .modul_card {
+    padding: 16px;
     width: 380px;
     height: 260px;
     border-radius: 20px;
