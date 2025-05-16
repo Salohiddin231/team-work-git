@@ -1,0 +1,31 @@
+.video_item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 280px;
+    height: 370px;
+    border-radius: 12px;
+    background: url(../images/image\ 1.png);
+    margin-top: 50px;
+}
+
+.video_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.video_title {
+    font-family: Poppins;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 65px;
+}
+
+.video_suptitle {
+    font-family: Poppins;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 45px;
+    letter-spacing: 0%;
+}
