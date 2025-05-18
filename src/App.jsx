@@ -18,7 +18,50 @@ import gift from './assets/icons/gift.svg'
 import ModulItem from './Components/ModulItem/ModulItem';
 import { Video } from './Components';
 import { Info } from './Components';
+import { useRef } from 'react';
+
 function App() {
+  const elName = useRef()
+  const elNum = useRef()
+
+  const HandleSubmit = (evt) => {
+    evt.preventDefault()
+    const name = elName.current.value
+    const num = elNum.current.value
+    const message = `Isim: ${name} ,  Nomer: ${num}`
+    
+    // ALI aka
+    // const token = '7832749316:AAHMr7eerAvxn30E4qXoQhA0CokZkOwRk3U'
+    // const chatId = '5369970706'
+
+    // Umar jon
+    const token = '7569321984:AAGX2XeMCOKocRo5Rbe6cCLrtotvhLlXLuA'
+    const chatId = '5313153677'
+    const url = `https://api.telegram.org/bot${token}/sendMessage`
+
+    fetch(url, {
+      method: 'POST',
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        chat_id: chatId,
+        text: message,
+      })
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log('success');
+
+      })
+      .catch((err) => {
+        console.log(err);
+
+      })
+
+  }
+
+
   return (
     <div className="App">
       <Header />
@@ -31,7 +74,9 @@ function App() {
               <div className="hero_content">
                 <h2 className='hero_title'>1 Oylik Biznesni Media orqali rivojlantirish kursi</h2>
                 <p className='hero_suptitle'>Biznesini brend darajasiga olib chiqmoqchi va savdosini media orqali x10 baravarga oshirmoqchi bo’lgan Biznesmenlar, Kasb egalari va mutahasislar uchun mahsus kurs!</p>
-                <button className="hero_btn">Royhatdan otish!</button>
+                <a className='hero_perehod' href="#input">
+                  <button className="hero_btn">Royhatdan otish!</button>
+                </a>
               </div>
               <img className='hero_img' src={Biznismen} alt="" />
             </div>
@@ -39,9 +84,9 @@ function App() {
           <div className="info_wrapper">
             <div className="container">
               <center className="info_content">
-                <Info num={'X 10'} text={'Savdoni 10 baravar oshirish uchun kerak bo’ladigan kuchli amaliy bilimlar!'} />
-                <Info num={'7 yil'} text={'Biznes tajribani va 4 yillik mediadagi bosib o’tilgan yo’lni, 1 oylik kursda o’rganasiz va biznesizda ishlatasiz!'} />
-                <Info num={'+ 100'} text={'Foydali materiallar, Amaliy vazifalar va Videodarsliklar!'} />
+                <Info num={'X 10'} text1={'Savdoni '} text2='10 baravar' text3='oshirish uchun kerak bo’ladigan kuchli amaliy bilimlar!' />
+                <Info num={'7 yil'} text1={'Biznes tajribani va '} text2='4 yillik' text3=' mediadagi bosib o’tilgan yo’lni, 1 oylik kursda o’rganasiz va biznesizda ishlatasiz!' />
+                <Info num={'+ 100'} text2={'Foydali materiallar'} text3=', Amaliy vazifalar va Videodarsliklar!' />
               </center>
             </div>
           </div>
@@ -61,11 +106,11 @@ function App() {
                 <span>Instagram’da</span> nafaqat post joylash, balki savdo qilishni o‘rganmoqchimisiz? Unda bu kurs aynan siz uchun!
               </p>
               <ul className="pro_card_wrapper">
-                <ProItem num="1" span="SMM mutaxassislari —" text="oddiy kontent emas, natija beradigan strategiyalar orqali mijozlarga haqiqiy qiymat yaratmoqchi bo‘lganlar uchun."/>
-                <ProItem num="2" span="SMM mutaxassislari —" text="oddiy kontent emas, natija beradigan strategiyalar orqali mijozlarga haqiqiy qiymat yaratmoqchi bo‘lganlar uchun."/>
-                <ProItem num="3" span="Yangi boshlayotganlar — " text="Instagram olamiga endi kirayotgan, qanday boshlashni bilmayotgan, lekin o‘rganib pul ishlamoqchi bo‘lganlar uchun."/>
-                <ProItem num="4" span="Shaxsiy brend yaratmoqchi bo‘lganlar —" text="o‘z ismi bilan tanilish, auditoriya yig‘ish va kuchli ishonch shakllantirishni xohlovchilar uchun."/>
-                <ProItem num="5" span="Bloger bo‘lmagan, mahsulotini internetda sotmoqchi bo‘lganlar — " text="yuzini ko‘rsatmasdan blog yuritish, va savdo qilishni o‘rganmoqchilar uchun."/>
+                <ProItem num="1" span="SMM mutaxassislari —" text="oddiy kontent emas, natija beradigan strategiyalar orqali mijozlarga haqiqiy qiymat yaratmoqchi bo‘lganlar uchun." />
+                <ProItem num="2" span="SMM mutaxassislari —" text="oddiy kontent emas, natija beradigan strategiyalar orqali mijozlarga haqiqiy qiymat yaratmoqchi bo‘lganlar uchun." />
+                <ProItem num="3" span="Yangi boshlayotganlar — " text="Instagram olamiga endi kirayotgan, qanday boshlashni bilmayotgan, lekin o‘rganib pul ishlamoqchi bo‘lganlar uchun." />
+                <ProItem num="4" span="Shaxsiy brend yaratmoqchi bo‘lganlar —" text="o‘z ismi bilan tanilish, auditoriya yig‘ish va kuchli ishonch shakllantirishni xohlovchilar uchun." />
+                <ProItem num="5" span="Bloger bo‘lmagan, mahsulotini internetda sotmoqchi bo‘lganlar — " text="yuzini ko‘rsatmasdan blog yuritish, va savdo qilishni o‘rganmoqchilar uchun." />
               </ul>
             </div>
           </div>
@@ -168,7 +213,7 @@ function App() {
         {/* modul end */}
 
         {/* position start */}
-        <section className="position">
+        <section id='input' className="position">
           <div className="container">
             <div className="contact_wrapper">
               <div className="contact-container">
@@ -176,9 +221,9 @@ function App() {
                   <p className='contact_title'>Siz bilan bog‘lanishimiz uchun,<span>formani</span> to‘ldiring!</p>
                   <p className="author"><span>Sakhib</span> Akhmatov</p>
                 </div>
-                <form className="contact-form">
-                  <input type="text" placeholder="Ismingiz*" required />
-                  <input type="tel" placeholder="Telefon raqamingiz*" required />
+                <form onSubmit={HandleSubmit} className="contact-form">
+                  <input ref={elName} type="text" placeholder="Ismingiz*" required />
+                  <input ref={elNum} type="tel" placeholder="Telefon raqamingiz*" required />
                   <button type="submit">Ro‘yxatdan o‘ting!</button>
                 </form>
               </div>
