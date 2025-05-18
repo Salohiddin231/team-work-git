@@ -24,6 +24,7 @@
     border: none;
     box-shadow: 0px 4px 20px 0px;
     background: rgb(255, 255, 255);
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1);
 }
 
 .siz_title {
@@ -64,7 +65,7 @@
     border-radius: 50%;
     width: 50px;
     height: 50px;
-    box-shadow: px 4px 20px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1);
     background: url(../icons/elma.svg) center;
     border: none;
     object-fit: cover;
@@ -74,7 +75,7 @@
     border-radius: 50%;
     width: 50px;
     height: 50px;
-    box-shadow: px 4px 20px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1);
     background: url(../icons/wb.svg) center;
     border: none;
     object-fit: cover;
@@ -84,7 +85,7 @@
     border-radius: 50%;
     width: 50px;
     height: 50px;
-    box-shadow: px 4px 20px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1);
     background: url(../icons/active.svg) center;
     border: none;
     object-fit: cover;
@@ -116,6 +117,7 @@
     .siz_card {
         width: 100%;
     }
+
     .siz_card_subtitle {
         width: 100%;
     }

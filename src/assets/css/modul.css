@@ -1,5 +1,6 @@
 .modul {
     padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 .modul_title {
@@ -78,6 +79,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        gap: 90px;
     }
 
     .modul_card {
