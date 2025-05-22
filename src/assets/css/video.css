@@ -5,8 +5,9 @@
     width: 280px;
     height: 370px;
     border-radius: 12px;
-    background: url(../images/image\ 1.png);
+    background: #000;
     margin-top: 50px;
+    position: relative;
 }
 
 .video_wrapper {
@@ -30,10 +31,55 @@
     letter-spacing: 0%;
 }
 
+.play {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    position: absolute;
+    top: 45%;
+    left: 40%;
+}
+.none {
+    display: none;
+}
+.viteo {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    /* width: 280px;
+    height: 370px; */
+    object-fit: cover;
+}
+
+.mySwiper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 @media(max-width:880px) {
 
     .video_wrapper {
-        display: none;
+        display: flex;
     }
 
     .video_title {
