@@ -19,6 +19,11 @@ import ModulItem from './Components/ModulItem/ModulItem';
 import { Video } from './Components';
 import { Info } from './Components';
 import { useRef } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+import 'swiper/css';
+import 'swiper/css/pagination';
+import { Pagination } from 'swiper/modules';
 
 function App() {
   const elName = useRef()
@@ -29,7 +34,7 @@ function App() {
     const name = elName.current.value
     const num = elNum.current.value
     const message = `Isim: ${name} ,  Nomer: ${num}`
-    
+
     // ALI aka
     // const token = '7832749316:AAHMr7eerAvxn30E4qXoQhA0CokZkOwRk3U'
     // const chatId = '5369970706'
@@ -123,10 +128,26 @@ function App() {
             <h3 className="video_title">Sahib Ahmatov - O’zi <span>kim?</span> </h3>
             <p className="video_suptitle">Tadbirkor - <span>Active Wildberries</span> va <span>Active Media</span> brendlari asoschisi!</p>
             <div className="video_wrapper">
-              <Video foto={Vide} />
-              <Video foto={Vide} />
-              <Video foto={Vide} />
-              <Video foto={Vide} />
+              <Swiper pagination={true} modules={[Pagination]} spaceBetween={16}
+                breakpoints={{
+                  0: {
+                    slidesPerView: 1,
+                  },
+                  600: {
+                    slidesPerView: 2,
+                  },
+                  880: {
+                    slidesPerView: 4,
+                  },
+                }}
+                className="mySwiper"
+              >
+                <SwiperSlide><Video /></SwiperSlide>
+                <SwiperSlide><Video /></SwiperSlide>
+                <SwiperSlide><Video /></SwiperSlide>
+                <SwiperSlide><Video /></SwiperSlide>
+              </Swiper>
+
             </div>
           </div>
         </section>
